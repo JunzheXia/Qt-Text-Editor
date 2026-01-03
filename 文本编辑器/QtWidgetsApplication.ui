@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtWidgetsApplicationClass</class>
+ <widget class="QMainWindow" name="QtWidgetsApplicationClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>786</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QtWidgetsApplication</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTextEdit" name="TextEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>641</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>在此输入文本</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>786</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="MenuTool">
+    <property name="title">
+     <string>工具</string>
+    </property>
+    <addaction name="Find"/>
+    <addaction name="Replace"/>
+    <addaction name="Delete"/>
+   </widget>
+   <widget class="QMenu" name="MenuText">
+    <property name="title">
+     <string>文字</string>
+    </property>
+    <addaction name="Font"/>
+    <addaction name="TextSize"/>
+   </widget>
+   <widget class="QMenu" name="MenuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="NewFile"/>
+    <addaction name="OpenFile"/>
+    <addaction name="SaveFile"/>
+   </widget>
+   <addaction name="MenuFile"/>
+   <addaction name="MenuTool"/>
+   <addaction name="MenuText"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="NewFile">
+   <property name="text">
+    <string>新建(&amp;N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="OpenFile">
+   <property name="text">
+    <string>打开(&amp;O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="SaveFile">
+   <property name="text">
+    <string>保存(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="Theme">
+   <property name="text">
+    <string>主题</string>
+   </property>
+  </action>
+  <action name="Find">
+   <property name="text">
+    <string>查找(&amp;F)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="Replace">
+   <property name="text">
+    <string>替换(&amp;R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="Delete">
+   <property name="text">
+    <string>删除(&amp;D)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="Font">
+   <property name="text">
+    <string>字体</string>
+   </property>
+  </action>
+  <action name="TextSize">
+   <property name="text">
+    <string>字号</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="QtWidgetsApplication.qrc"/>
+ </resources>
+ <connections/>
+</ui>
